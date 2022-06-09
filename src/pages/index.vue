@@ -6,7 +6,7 @@ const works = ref([1, 2, 3])
 <template>
   <div>
     <div text-4xl>
-      <div i-carbon-campsite inline-block />
+      <div i-healthicons-r-negative inline-block />
     </div>
 
     <p>
