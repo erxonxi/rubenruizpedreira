@@ -1,13 +1,19 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 
+const localeSaved = window.localStorage.getItem('lenguage')
+if (localeSaved)
+  locale.value = localeSaved
+
 const toggleLocales = () => {
   switch (locale.value) {
     case 'es':
       locale.value = 'en'
+      window.localStorage.setItem('lenguage', 'en')
       break
     case 'en':
       locale.value = 'es'
+      window.localStorage.setItem('lenguage', 'es')
       break
   }
 }
