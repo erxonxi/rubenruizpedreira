@@ -10,8 +10,6 @@ Buenas 👋, mi nombre es **Rubén Ruiz Pedreira** y soy **Desarollador de softw
 
 Mi interes principal es el desarollo de software aplicando buenas practicas. En mis proyectos suelo llevar acabo una **arquitectura hexagonal** desarollando con la ayuda de los **tests unitarios** y complementando con **tests de integración** usango **gherkin** (lenguaje natural).
 
-
-
 ```ts
 function life(programming: boolean) {
   if (programming)

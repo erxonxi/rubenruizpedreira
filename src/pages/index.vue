@@ -10,7 +10,7 @@ const works = ref([1, 2, 3])
     </div>
 
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
+      <a rel="noreferrer" href="https://github.com/erxonxi" target="_blank">
         Rubén Ruiz Pedreira
       </a>
     </p>

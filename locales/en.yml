@@ -3,6 +3,7 @@ button:
   back: Back
   go: GO
   home: Home
+  blog: Blog
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
@@ -21,4 +22,8 @@ intro:
     job: Netex Learning - Web Software Developer
   title_passions: Passions
   desc_passions: I love the development world, although the architecture and systems part also fascinates me. Thanks to recent advances such as Docker or Kubernetes, it has become easier even for developers. And if we talk about music, what can I say, electronic music has earned my number one spot.
+about:
+  title: About
+  desc1: Hello 👋, my name is **Rubén Ruiz Pedreira** and I am a **Software developer** eager to learn. My experience is in the development of **web software**, however, I am very curious about other areas such as **A.I.**
+  desc2: My main interest is software development applying best practices. In my projects I usually carry out a **hexagonal architecture** developing with the help of **unit tests** and complementing it with **integration tests** using **gherkin** (natural language).
 not-found: Not found

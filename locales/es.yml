@@ -3,6 +3,7 @@ button:
   back: Atrás
   go: Ir
   home: Inicio
+  blog: Blog
   toggle_dark: Alternar modo oscuro
   toggle_langs: Cambiar idiomas
 intro:
@@ -21,4 +22,8 @@ intro:
     job: Netex Learning - Desarrollador de Software Web
   title_passions: Passiones
   desc_passions: El mundo del desarrollo me encanta, aunque la parte de la arquitectura y sistemas también me fascina. Gracias a últimos avances como Docker o Kubernetes se ha vuelto más sencillo hasta para los desarrolladores. Y si hablamos de música, que decir, la música electrónica se ha ganado mi puesto número uno.
+about:
+  title: Sobre Mi
+  desc1: Buenas 👋, mi nombre es **Rubén Ruiz Pedreira** y soy **Desarollador de software** con muchas ganas de aprender. Mi experiencia es en el desarrollo de **software web**, sin embargo, tengo gran curiosidad por otros ambitos como las **I.A.**
+  desc2: Mi interes principal es el desarollo de software aplicando buenas practicas. En mis proyectos suelo llevar acabo una **arquitectura hexagonal** desarollando con la ayuda de los **tests unitarios** y complementando con **tests de integración** usango **gherkin** (lenguaje natural).
 not-found: No se ha encontrado
