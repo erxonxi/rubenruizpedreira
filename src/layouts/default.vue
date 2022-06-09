@@ -21,8 +21,8 @@ const toggleLocales = () => {
 
     <div class="basis-2/4 text-lg mt-2">
       <div flex flex-row gap-4>
-        <a href="/blog">{{ t('button.blog') }}</a>
-        <a href="/about">{{ t('button.about') }}</a>
+        <a href="/blog" :title="t('button.blog')">{{ t('button.blog') }}</a>
+        <a href="/about" :title="t('button.about')">{{ t('button.about') }}</a>
         <a rel="noreferrer" href="https://github.com/erxonxi" target="_blank">
           GitHub
         </a>
