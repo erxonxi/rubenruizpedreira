@@ -11,13 +11,12 @@ const { t } = useI18n()
     <p>
       <a rel="noreferrer" href="https://github.com/erxonxi" target="_blank">
         Rubén Ruiz Pedreira
+        <em text-sm opacity-75 block>{{ t('intro.desc') }}</em>
       </a>
     </p>
 
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
     <RouterView />
+
     <Footer />
   </main>
 </template>

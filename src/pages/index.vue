@@ -12,11 +12,8 @@ const works = ref([1, 2, 3])
     <p>
       <a rel="noreferrer" href="https://github.com/erxonxi" target="_blank">
         Rubén Ruiz Pedreira
+        <em text-sm opacity-75 block>{{ t('intro.desc') }}</em>
       </a>
-    </p>
-
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
     </p>
 
     <div text-left container mx-auto max-w-xl my-4>
