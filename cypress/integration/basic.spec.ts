@@ -3,34 +3,36 @@ context('Basic', () => {
     cy.visit('/')
   })
 
-  it('basic nav', () => {
+  it('view home & change lenguage', () => {
     cy.url()
       .should('eq', 'http://localhost:3333/')
 
-    cy.contains('[Home Layout]')
+    cy.contains('Rubén Ruiz Pedreira')
       .should('exist')
 
-    cy.get('#input')
-      .type('Vitesse{Enter}')
-      .url()
-      .should('eq', 'http://localhost:3333/hi/Vitesse')
-
-    cy.contains('[Default Layout]')
+    cy.contains('Work')
       .should('exist')
 
-    cy.get('[btn]')
+    cy.get('[title="Change languages"]')
       .click()
-      .url()
-      .should('eq', 'http://localhost:3333/')
+
+    cy.contains('Trabajo')
+      .should('exist')
   })
 
-  it('markdown', () => {
+  it('about', () => {
     cy.get('[title="About"]')
       .click()
       .url()
       .should('eq', 'http://localhost:3333/about')
 
-    cy.get('pre.language-js')
+    cy.contains('About')
+      .should('exist')
+
+    cy.contains('Rubén Ruiz Pedreira')
+      .should('exist')
+
+    cy.contains('gherkin')
       .should('exist')
   })
 })
