@@ -1,5 +1,5 @@
 <template>
-  <nav text-sm mt-6 opacity-75>
+  <nav text-sm my-6 opacity-75>
     <em>2022 by Rubén Ruiz Pedreira</em>
   </nav>
 </template>
