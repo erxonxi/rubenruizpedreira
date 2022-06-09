@@ -5,11 +5,7 @@ const works = ref([1, 2, 3])
 
 <template>
   <div>
-    <div text-4xl>
-      <div i-healthicons-r-negative inline-block />
-    </div>
-
-    <p>
+    <p text-4xl my-8>
       <a rel="noreferrer" href="https://github.com/erxonxi" target="_blank">
         Rubén Ruiz Pedreira
         <em text-sm opacity-75 block>{{ t('intro.desc') }}</em>
@@ -53,5 +49,5 @@ const works = ref([1, 2, 3])
 
 <route lang="yaml">
 meta:
-  layout: home
+  layout: default
 </route>
