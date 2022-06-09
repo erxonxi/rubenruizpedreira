@@ -9,17 +9,17 @@ button:
 intro:
   desc: Desarrollador de Software Web
   title_work: Trabajo
-  desc_work: Actualmente, trabajo en Gestión de Calidad en Nemon Inteligence In Bissnes, realizando pruebas automatizadas en entornos de prueba. En mi tiempo libre me encanta trabajar en pequeños proyectos para continuar aprendiendo nuevas tecnologías o probando nuevos lenguajes.
+  desc_work: Actualmente, trabajo como Desarollador de Softaware Web en Netex Learning, implementando nuevas funcionalidades, mejorando y refactorizando código, arreglando bugs... Siempre aplicando Test Driven Design y buenas prácticas de programación.  En mi tiempo libre me encanta trabajar en pequeños proyectos para continuar aprendiendo nuevas tecnologías o probando nuevas ideas que surgen en mi mente.
   title_bio: Biografía
   work1:
-    dates: jul.2020 to dec.2021
-    job: Nemon Inteligence In Bissness - Desarrollador de Software Web Junior
+    dates: jun.2022 to present
+    job: Netex Learning - Desarrollador de Software Web
   work2:
     dates: dec.2021 to jun.2022
     job: Nemon Inteligence In Bissness - Gestión de Calidad
   work3:
-    dates: jun.2022 to present
-    job: Netex Learning - Desarrollador de Software Web
+    dates: jul.2020 to dec.2021
+    job: Nemon Inteligence In Bissness - Desarrollador de Software Web Junior
   title_passions: Passiones
   desc_passions: El mundo del desarrollo me encanta, aunque la parte de la arquitectura y sistemas también me fascina. Gracias a últimos avances como Docker o Kubernetes se ha vuelto más sencillo hasta para los desarrolladores. Y si hablamos de música, que decir, la música electrónica se ha ganado mi puesto número uno.
 about:
