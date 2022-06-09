@@ -1,14 +1,6 @@
 <script setup lang="ts">
-const user = useUserStore()
-const name = $ref(user.savedName)
-
-const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
-
 const { t } = useI18n()
+const works = ref([1, 2, 3])
 </script>
 
 <template>
@@ -16,42 +8,48 @@ const { t } = useI18n()
     <div text-4xl>
       <div i-carbon-campsite inline-block />
     </div>
+
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
+        Rubén Ruiz Pedreira
       </a>
     </p>
+
     <p>
       <em text-sm opacity-75>{{ t('intro.desc') }}</em>
     </p>
 
-    <div py-4 />
+    <div text-left container mx-auto max-w-xl my-4>
+      <h3 text-2xl font-bold mb-2 underline underline-offset-2>
+        {{ t('intro.title_work') }}
+      </h3>
 
-    <input
-      id="input"
-      v-model="name"
-      :placeholder="t('intro.whats-your-name')"
-      :aria-label="t('intro.whats-your-name')"
-      type="text"
-      autocomplete="false"
-      p="x4 y2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
-      @keydown.enter="go"
-    >
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
+      <p ml-4>
+        {{ t('intro.desc_work') }}
+      </p>
+    </div>
 
-    <div>
-      <button
-        btn m-3 text-sm
-        :disabled="!name"
-        @click="go"
-      >
-        {{ t('button.go') }}
-      </button>
+    <div text-left container mx-auto max-w-xl my-4>
+      <h3 text-2xl font-bold mb-2 underline underline-offset-2>
+        {{ t('intro.title_bio') }}
+      </h3>
+
+      <p v-for="(i) in works" :key="i" class="mb-2 ml-4">
+        <span text-lg font-bold mb-2 inline>
+          {{ t(`intro.work${i}.dates`) }}
+        </span>
+        {{ t(`intro.work${i}.job`) }}
+      </p>
+    </div>
+
+    <div text-left container mx-auto max-w-xl my-4>
+      <h3 text-2xl font-bold mb-2 underline underline-offset-2>
+        {{ t('intro.title_passions') }}
+      </h3>
+
+      <p ml-4>
+        {{ t('intro.desc_passions') }}
+      </p>
     </div>
   </div>
 </template>

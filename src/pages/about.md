@@ -1,21 +1,22 @@
 ---
-title: About
+title: Sobre Mi
 ---
-
 <div class="text-center">
-  <!-- You can use Vue components inside markdown -->
   <div i-carbon-dicom-overlay class="text-4xl -mb-6 m-auto" />
-  <h3>About</h3>
+  <h3>Sobre Mi</h3>
 </div>
 
-[Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite) starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly. With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA and uses **UnoCSS** for styling and icons.
+Buenas 👋, mi nombre es **Rubén Ruiz Pedreira** y soy **Desarollador de software** con muchas ganas de aprender. Mi experiencia es en el desarrollo de **software web**, sin embargo, tengo gran curiosidad por otros ambitos como las **I.A.**
 
-```js
-// syntax highlighting example
-function vitesse() {
-  const foo = 'bar'
-  console.log(foo)
+Mi interes principal es el desarollo de software aplicando buenas practicas. En mis proyectos suelo llevar acabo una **arquitectura hexagonal** desarollando con la ayuda de los **tests unitarios** y complementando con **tests de integración** usango **gherkin** (lenguaje natural).
+
+
+
+```ts
+function life(programming: boolean) {
+  if (programming)
+    return 'Aprendiendo...'
+
+  return '¡Es el momento de aprender!'
 }
 ```
-
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.

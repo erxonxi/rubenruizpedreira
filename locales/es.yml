@@ -1,14 +1,24 @@
 button:
-  about: Acerca de
+  about: Sobre Mi
   back: Atrás
   go: Ir
   home: Inicio
   toggle_dark: Alternar modo oscuro
   toggle_langs: Cambiar idiomas
 intro:
-  desc: Plantilla de Inicio de Vite Dogmática
-  dynamic-route: Demo de ruta dinámica
-  hi: ¡Hola, {name}!
-  aka: También conocido como
-  whats-your-name: ¿Cómo te llamas?
+  desc: Desarrollador de Software Web
+  title_work: Trabajo
+  desc_work: Actualmente, trabajo en Gestión de Calidad en Nemon Inteligence In Bissnes, realizando pruebas automatizadas en entornos de prueba. En mi tiempo libre me encanta trabajar en pequeños proyectos para continuar aprendiendo nuevas tecnologías o probando nuevos lenguajes.
+  title_bio: Biografía
+  work1:
+    dates: jul.2020 to dec.2021
+    job: Nemon Inteligence In Bissness - Desarrollador de Software Web Junior
+  work2:
+    dates: dec.2021 to jun.2022
+    job: Nemon Inteligence In Bissness - Gestión de Calidad
+  work3:
+    dates: jun.2022 to present
+    job: Netex Learning - Desarrollador de Software Web
+  title_passions: Passiones
+  desc_passions: El mundo del desarrollo me encanta, aunque la parte de la arquitectura y sistemas también me fascina. Gracias a últimos avances como Docker o Kubernetes se ha vuelto más sencillo hasta para los desarrolladores. Y si hablamos de música, que decir, la música electrónica se ha ganado mi puesto número uno.
 not-found: No se ha encontrado

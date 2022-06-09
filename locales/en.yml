@@ -6,9 +6,19 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  aka: Also known as
-  whats-your-name: What's your name?
+  desc: Web Software Developer
+  title_work: Work
+  desc_work: Currently, I work in Quality Management at Nemon Intelligence In Bissnes, performing automated tests in test environments. In my free time I love to work on small projects to continue learning new technologies or trying out new languages.
+  title_bio: Biography
+  work1:
+    dates: jul.2020 to dec.2021
+    job: Nemon Inteligence In Bissness - Web Software Developer Junior
+  work2:
+    dates: dec.2021 to jun.2022
+    job: Nemon Inteligence In Bissness - Quality Management
+  work3:
+    dates: jun.2022 to present
+    job: Netex Learning - Web Software Developer
+  title_passions: Passions
+  desc_passions: I love the development world, although the architecture and systems part also fascinates me. Thanks to recent advances such as Docker or Kubernetes, it has become easier even for developers. And if we talk about music, what can I say, electronic music has earned my number one spot.
 not-found: Not found
