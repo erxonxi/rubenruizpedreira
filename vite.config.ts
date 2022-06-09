@@ -91,8 +91,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Rubén Ruiz Pedreira',
+        short_name: 'RRP',
         theme_color: '#ffffff',
         icons: [
           {
