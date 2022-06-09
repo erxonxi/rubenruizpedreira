@@ -26,4 +26,7 @@ about:
   title: About
   desc1: Hello 👋, my name is **Rubén Ruiz Pedreira** and I am a **Software developer** eager to learn. My experience is in the development of **web software**, however, I am very curious about other areas such as **A.I.**
   desc2: My main interest is software development applying best practices. In my projects I usually carry out a **hexagonal architecture** developing with the help of **unit tests** and complementing it with **integration tests** using **gherkin** (natural language).
+blog:
+  title: Blog
+  last_posts: Last Posts
 not-found: Not found
