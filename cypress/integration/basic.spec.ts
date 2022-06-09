@@ -1,12 +1,10 @@
 context('Basic', () => {
   beforeEach(() => {
     cy.visit('/')
+    cy.url().should('eq', 'http://localhost:3333/')
   })
 
   it('view home & change lenguage', () => {
-    cy.url()
-      .should('eq', 'http://localhost:3333/')
-
     cy.contains('Rubén Ruiz Pedreira')
       .should('exist')
 
@@ -20,11 +18,9 @@ context('Basic', () => {
       .should('exist')
   })
 
-  it('about', () => {
-    cy.get('[title="About"]')
-      .click()
-      .url()
-      .should('eq', 'http://localhost:3333/about')
+  it('visit about page', () => {
+    cy.get('[title="About"]').click()
+      .url().should('eq', 'http://localhost:3333/about')
 
     cy.contains('About')
       .should('exist')
@@ -34,5 +30,10 @@ context('Basic', () => {
 
     cy.contains('gherkin')
       .should('exist')
+  })
+
+  it('visit github profile', () => {
+    cy.get('[title="GitHub"]').click()
+      .url().should('eq', 'http://localhost:3333/')
   })
 })
