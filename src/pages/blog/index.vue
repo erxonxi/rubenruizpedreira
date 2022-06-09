@@ -2,6 +2,10 @@
 const { t } = useI18n()
 const lastPosts = ref([
   {
+    slug: 'your-first-kubernetes',
+    title: 'Crear tu primer clúster de Kubernetes con k0s',
+  },
+  {
     slug: 'first-post',
     title: 'Mi Primer Post',
   },
