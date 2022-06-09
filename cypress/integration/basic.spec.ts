@@ -18,6 +18,10 @@ context('Basic', () => {
       .should('exist')
   })
 
+  it('toggle dark mode', () => {
+    cy.get('[title="Toggle dark mode"]').click()
+  })
+
   it('visit about page', () => {
     cy.get('[title="About"]').click()
       .url().should('eq', 'http://localhost:3333/about')
