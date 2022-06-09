@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': ^0.25.1
   '@iconify-json/carbon': ^1.1.5
+  '@iconify-json/healthicons': ^1.1.1
   '@intlify/vite-plugin-vue-i18n': ^4.0.0
   '@types/markdown-it-link-attributes': ^3.0.1
   '@types/marked': ^4.0.3
@@ -58,6 +59,7 @@ dependencies:
 devDependencies:
   '@antfu/eslint-config': 0.25.1_xztl6dhthcahlo6akmb2bmjmle
   '@iconify-json/carbon': 1.1.5
+  '@iconify-json/healthicons': 1.1.1
   '@intlify/vite-plugin-vue-i18n': 4.0.0_vite@2.9.9+vue-i18n@9.1.10
   '@types/markdown-it-link-attributes': 3.0.1
   '@types/marked': 4.0.3
@@ -1411,6 +1413,12 @@ packages:
 
   /@iconify-json/carbon/1.1.5:
     resolution: {integrity: sha512-ENl8CIEo+7JcRzpJ/58i+dDc3fkNOO7gyNGg4S4JN5cAiVpvltYTVO86Oei7rpl8bKypJ0vk3B0BbzzTw7DclA==}
+    dependencies:
+      '@iconify/types': 1.1.0
+    dev: true
+
+  /@iconify-json/healthicons/1.1.1:
+    resolution: {integrity: sha512-5/IYakEYdsbsyNfw7DoT33zom5h+sDwLoOq5Ka6FDQfK9k3WW02kMmukULT5GmOsqPg//zOXwHpFux3dqv5MCA==}
     dependencies:
       '@iconify/types': 1.1.0
     dev: true
