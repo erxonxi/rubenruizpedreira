@@ -7,6 +7,7 @@ button:
   projects: Proyectos
   toggle_dark: Alternar modo oscuro
   toggle_langs: Cambiar idiomas
+  subscribe: Suscribirte
 intro:
   desc: Desarrollador de Software Web
   title_work: Trabajo
@@ -35,4 +36,7 @@ projects:
   list:
     fasteats:
       desc: Plataforma donde restaurantes y locales de comida pueden mostrar sus productos y gestionar los pedidos.
+newslatter:
+  title: Suscribirte al boletín de noticias
+  desc: Puedes suscribirte al boletín de noticias para enterarte de las nuevas noticias.
 not-found: No se ha encontrado

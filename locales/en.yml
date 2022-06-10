@@ -7,6 +7,7 @@ button:
   projects: Projects
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
+  subscribe: Subscribe
 intro:
   desc: Web Software Developer
   title_work: Work
@@ -35,4 +36,7 @@ projects:
   list:
     fasteats:
       desc: Platform where restaurants and food stores can display their products and manage orders.
+newslatter:
+  title: Subscribe to newsletter
+  desc: You can subscribe to newsletter to find out about new news.
 not-found: Not found

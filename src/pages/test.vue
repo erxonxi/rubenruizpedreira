@@ -5,6 +5,6 @@
 <template>
   <div>
     <h1>TEST</h1>
-    <NavBarMenu />
+    <NewslatterModal />
   </div>
 </template>
