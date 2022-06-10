@@ -14,12 +14,12 @@ const { t } = useI18n()
 
     <ul list-disc pl-12 mt-4>
       <li>
-        <a href="https://dp-public-dev.rubenruizpedreira.es/">
+        <a href="https://dp-public-dev.rubenruizpedreira.es/" target="_blank">
           <strong>FastEats Public</strong>
         </a>
       </li>
       <li>
-        <a href="https://dp-dev.rubenruizpedreira.es/">
+        <a href="https://dp-dev.rubenruizpedreira.es/" target="_blank">
           <strong>FastEats Admin</strong>
         </a>
       </li>
