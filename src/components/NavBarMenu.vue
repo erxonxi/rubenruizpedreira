@@ -64,17 +64,14 @@ const toggleLocales = () => {
             </a>
           </MenuItem>
           <MenuItem>
-            <div text-right text-lg mt-2>
-              <a href="/about" class="icon-btn mx-2" :title="t('button.about')">
-                <div i-carbon-user-favorite />
-              </a>
-              <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
+            <div text-lg mt-2 grid grid-cols-3 text-xl>
+              <a class="icon-btn mx-auto" :title="t('button.toggle_langs')" @click="toggleLocales()">
                 <div i-carbon-language />
               </a>
-              <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/erxonxi" target="_blank" title="GitHub">
+              <a class="icon-btn mx-auto" rel="noreferrer" href="https://github.com/erxonxi" target="_blank" title="GitHub">
                 <div i-carbon-logo-github />
               </a>
-              <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
+              <button class="icon-btn mx-auto !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
                 <div i="carbon-sun dark:carbon-moon" />
               </button>
             </div>
