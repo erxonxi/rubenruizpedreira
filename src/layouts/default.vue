@@ -25,13 +25,13 @@ const toggleLocales = () => {
       <div i-healthicons-r-negative inline-block text-black dark:text-white />
     </RouterLink>
 
-    <div class="basis-2/4 text-lg mt-2">
+    <div class="hidden md:inline basis-2/4 text-lg mt-2">
       <div flex flex-row gap-4>
         <a href="/blog" :title="t('button.blog')">{{ t('button.blog') }}</a>
         <a href="/projects" :title="t('button.projects')">{{ t('button.projects') }}</a>
       </div>
     </div>
-    <div class="basis-2/4 text-right text-lg mt-2">
+    <div class="hidden md:inline basis-2/4 text-right text-lg mt-2">
       <a href="/about" class="icon-btn mx-2" :title="t('button.about')">
         <div i-carbon-user-favorite />
       </a>
@@ -44,6 +44,9 @@ const toggleLocales = () => {
       <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
         <div i="carbon-sun dark:carbon-moon" />
       </button>
+    </div>
+    <div class="inline md:hidden basis-3/4 text-right">
+      <NavBarMenu />
     </div>
   </nav>
 

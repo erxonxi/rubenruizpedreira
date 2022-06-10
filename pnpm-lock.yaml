@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.25.1
+  '@headlessui/vue': ^1.6.4
   '@iconify-json/carbon': ^1.1.5
   '@iconify-json/healthicons': ^1.1.1
   '@intlify/vite-plugin-vue-i18n': ^4.0.0
@@ -45,6 +46,7 @@ specifiers:
   vue-tsc: ^0.36.0
 
 dependencies:
+  '@headlessui/vue': 1.6.4_vue@3.2.36
   '@vueuse/core': 8.6.0_vue@3.2.36
   '@vueuse/head': 0.7.6_vue@3.2.36
   marked: 4.0.16
@@ -1395,6 +1397,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@headlessui/vue/1.6.4_vue@3.2.36:
+    resolution: {integrity: sha512-axZMcfRLNuwHESPMgDb0Vj7xxlNPmsPl77pvoRZGzJh7lRdRic9kC/qbVM8G36OpIJRZzqrlADLQ2JIObhQjBg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.36
+    dev: false
 
   /@humanwhocodes/config-array/0.9.5:
     resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
