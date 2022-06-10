@@ -23,7 +23,7 @@ const toggleLocales = () => {
 <template>
   <Menu as="div" class="relative inline-block text-left">
     <div>
-      <MenuButton text-2xl inline-flex i-carbon-overflow-menu-horizontal />
+      <MenuButton title="Menu" text-2xl inline-flex i-carbon-overflow-menu-horizontal />
     </div>
 
     <transition
