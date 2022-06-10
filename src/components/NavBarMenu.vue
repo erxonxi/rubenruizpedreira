@@ -38,7 +38,7 @@ const toggleLocales = () => {
         <div class="px-1 py-1">
           <MenuItem v-slot="{ active }">
             <a
-              href="/blog" class="group flex w-full items-center rounded-sm px-2 py-2 text-sm" :class="[
+              href="/blog" class="group flex w-full items-center rounded-sm px-2 py-2" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.blog')"
             >
@@ -47,7 +47,7 @@ const toggleLocales = () => {
           </MenuItem>
           <MenuItem v-slot="{ active }">
             <a
-              href="/projects" class="group flex w-full items-center rounded-sm px-2 py-2 text-sm" :class="[
+              href="/projects" class="group flex w-full items-center rounded-sm px-2 py-2" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.projects')"
             >
@@ -56,7 +56,7 @@ const toggleLocales = () => {
           </MenuItem>
           <MenuItem v-slot="{ active }">
             <a
-              href="/about" class="group flex w-full items-center rounded-sm px-2 py-2 text-sm" :class="[
+              href="/about" class="group flex w-full items-center rounded-sm px-2 py-2" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.about')"
             >
@@ -64,7 +64,7 @@ const toggleLocales = () => {
             </a>
           </MenuItem>
           <MenuItem>
-            <div text-lg mt-2 grid grid-cols-3 text-xl>
+            <div my-4 grid grid-cols-3 text-xl>
               <a class="icon-btn mx-auto" :title="t('button.toggle_langs')" @click="toggleLocales()">
                 <div i-carbon-language />
               </a>
