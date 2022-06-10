@@ -4,6 +4,7 @@ button:
   go: Ir
   home: Inicio
   blog: Blog
+  projects: Proyectos
   toggle_dark: Alternar modo oscuro
   toggle_langs: Cambiar idiomas
 intro:
@@ -29,4 +30,9 @@ about:
 blog:
   title: Blog
   last_posts: Últimos Artículos
+projects:
+  title: Proyectos
+  list:
+    fasteats:
+      desc: Plataforma donde restaurantes y locales de comida pueden mostrar sus productos y gestionar los pedidos.
 not-found: No se ha encontrado

@@ -28,10 +28,13 @@ const toggleLocales = () => {
     <div class="basis-2/4 text-lg mt-2">
       <div flex flex-row gap-4>
         <a href="/blog" :title="t('button.blog')">{{ t('button.blog') }}</a>
-        <a href="/about" :title="t('button.about')">{{ t('button.about') }}</a>
+        <a href="/projects" :title="t('button.projects')">{{ t('button.projects') }}</a>
       </div>
     </div>
     <div class="basis-2/4 text-right text-lg mt-2">
+      <a href="/about" class="icon-btn mx-2" :title="t('button.about')">
+        <div i-carbon-user-favorite />
+      </a>
       <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
         <div i-carbon-language />
       </a>

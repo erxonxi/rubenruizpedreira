@@ -4,6 +4,7 @@ button:
   go: GO
   home: Home
   blog: Blog
+  projects: Projects
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
@@ -29,4 +30,9 @@ about:
 blog:
   title: Blog
   last_posts: Last Posts
+projects:
+  title: Projects
+  list:
+    fasteats:
+      desc: Platform where restaurants and food stores can display their products and manage orders.
 not-found: Not found
