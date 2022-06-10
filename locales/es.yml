@@ -34,5 +34,5 @@ projects:
   title: Proyectos
   list:
     fasteats:
-      desc: Encuentra tus restaurantes favoritos con los descuentos más atractivos para pedir comida. Date de alta en nuestra newsletter y recibe los mejores descuentos en comida a domicilio.
+      desc: Plataforma donde restaurantes y locales de comida pueden mostrar sus productos y gestionar los pedidos.
 not-found: No se ha encontrado

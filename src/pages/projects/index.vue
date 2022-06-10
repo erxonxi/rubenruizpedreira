@@ -2,9 +2,8 @@
 const { t } = useI18n()
 const projects = ref([
   {
-    slug: 'fast-eats',
+    slug: 'fasteats',
     title: 'FastEats',
-    description: 'Software Gestión de pedidos para restaurantes y locales de comida.',
   },
 ])
 </script>
@@ -19,7 +18,7 @@ const projects = ref([
       <a v-for="project in projects" :key="project.slug" drop-shadow-xl border-4 border-gray-500 p-4 rounded-xl :href="`/projects/${project.slug}`">
         <h2 text-2xl font-bold>{{ project.title }}</h2>
         <p text-sm text-gray-600 dark:text-gray-300>
-          {{ project.description }}
+          {{ t(`projects.list.${project.slug}.desc`) }}
         </p>
       </a>
     </div>

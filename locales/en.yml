@@ -34,5 +34,5 @@ projects:
   title: Projects
   list:
     fasteats:
-      desc: Find your favorite restaurants with the most attractive discounts to order food. Sign up for our newsletter and receive the best discounts on food delivery.
+      desc: Platform where restaurants and food stores can display their products and manage orders.
 not-found: Not found
