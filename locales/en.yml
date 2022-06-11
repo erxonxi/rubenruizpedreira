@@ -9,6 +9,7 @@ button:
   toggle_langs: Change languages
   subscribe: Subscribe
   services: Services
+  contact: Contact
 intro:
   desc: Web Software Developer
   title_work: Work
