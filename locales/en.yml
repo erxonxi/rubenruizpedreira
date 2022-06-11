@@ -8,6 +8,7 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
   subscribe: Subscribe
+  services: Services
 intro:
   desc: Web Software Developer
   title_work: Work
@@ -39,4 +40,9 @@ projects:
 newslatter:
   title: Subscribe to newsletter
   desc: You can subscribe to newsletter to find out about new news.
+services:
+  title: Services
+  list:
+    1:
+      title: Simple Web
 not-found: Not found

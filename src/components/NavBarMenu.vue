@@ -56,6 +56,15 @@ const toggleLocales = () => {
           </MenuItem>
           <MenuItem v-slot="{ active }">
             <a
+              href="/services" class="group flex w-full items-center rounded-sm p-4" :class="[
+                active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
+              ]" :title="t('button.services')"
+            >
+              {{ t('button.services') }}
+            </a>
+          </MenuItem>
+          <MenuItem v-slot="{ active }">
+            <a
               href="/about" class="group flex w-full items-center rounded-sm p-4" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.about')"

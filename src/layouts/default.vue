@@ -29,6 +29,7 @@ const toggleLocales = () => {
       <div flex flex-row gap-4>
         <a href="/blog" :title="t('button.blog')">{{ t('button.blog') }}</a>
         <a href="/projects" :title="t('button.projects')">{{ t('button.projects') }}</a>
+        <a href="/services" :title="t('button.services')">{{ t('button.services') }}</a>
       </div>
     </div>
     <div class="hidden md:inline basis-2/4 text-right text-lg mt-2">
