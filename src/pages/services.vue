@@ -67,7 +67,7 @@ const selected = ref(plans[0])
               ]"
             >
               <div class="flex w-full items-center justify-between">
-                <div class="flex items-center">
+                <div class="basis-4/6 flex items-center">
                   <div class="text-sm">
                     <RadioGroupLabel
                       as="p"
@@ -87,7 +87,9 @@ const selected = ref(plans[0])
                     </RadioGroupDescription>
                   </div>
                 </div>
-                <span class="font-bold text-rigth" :class="checked ? 'text-white' : ''">{{ plan.price }}</span>
+                <div class="basis-2/6 text-right">
+                  <span class="font-bold " :class="checked ? 'text-white' : ''">{{ plan.price }}</span>
+                </div>
               </div>
             </div>
           </RadioGroupOption>
