@@ -37,40 +37,40 @@ const toggleLocales = () => {
       <MenuItems absolute z-10 right-0 mt-1 w-64 origin-top-right divide-y divide-gray-100 rounded-xs bg-white dark:bg-neutral-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none>
         <div id="menu-nav-bar" class="px-1 py-1 text-xl">
           <MenuItem v-slot="{ active }">
-            <a
-              href="/blog" class="group flex w-full items-center rounded-sm p-4" :class="[
+            <RouterLink
+              to="/blog" class="group flex w-full items-center rounded-sm p-4" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.blog')"
             >
               {{ t('button.blog') }}
-            </a>
+            </RouterLink>
           </MenuItem>
           <MenuItem v-slot="{ active }">
-            <a
-              href="/projects" class="group flex w-full items-center rounded-sm p-4" :class="[
+            <RouterLink
+              to="/projects" class="group flex w-full items-center rounded-sm p-4" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.projects')"
             >
               {{ t('button.projects') }}
-            </a>
+            </RouterLink>
           </MenuItem>
           <MenuItem v-slot="{ active }">
-            <a
-              href="/services" class="group flex w-full items-center rounded-sm p-4" :class="[
+            <RouterLink
+              to="/services" class="group flex w-full items-center rounded-sm p-4" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.services')"
             >
               {{ t('button.services') }}
-            </a>
+            </RouterLink>
           </MenuItem>
           <MenuItem v-slot="{ active }">
-            <a
-              href="/about" class="group flex w-full items-center rounded-sm p-4" :class="[
+            <RouterLink
+              to="/about" class="group flex w-full items-center rounded-sm p-4" :class="[
                 active ? 'bg-gray-500 dark:bg-gray-500 text-white' : 'text-gray-800 dark:text-gray-200',
               ]" :title="t('button.about')"
             >
               {{ t('button.about') }}
-            </a>
+            </RouterLink>
           </MenuItem>
           <MenuItem>
             <div my-4 grid grid-cols-3 text-2xl>
