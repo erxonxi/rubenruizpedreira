@@ -26,6 +26,7 @@ function openModal() {
     <button
       type="button"
       class="rounded-md bg-neutral-400 bg-opacity-20 px-4 py-2 text-sm font-medium text-neutral-700 dark:text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+      :title="t('newslatter.title')"
       @click="openModal"
     >
       {{ t('newslatter.title') }}
