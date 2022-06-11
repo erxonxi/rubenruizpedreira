@@ -98,7 +98,7 @@ const selected = ref(plans[0])
       <div w-full text-center my-4 pt-6>
         <a
           class="py-4 px-6 bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 hover:dark:bg-neutral-700 rounded-lg"
-          :href="`mailto:rubenruizpedreira@email.com?subject=Contract%20is%20${selected.name}`"
+          :href="`mailto:rubenruizpedreira@email.com?subject=Contract%20${selected.name}%20${selected.price}`"
           target="_blank"
         >
           {{ t('button.contact') }}
