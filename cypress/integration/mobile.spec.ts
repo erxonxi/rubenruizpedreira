@@ -40,4 +40,11 @@ context('Mobile Browsing', () => {
     cy.contains('2022 by Rubén Ruiz Pedreira')
       .should('exist')
   })
+
+  it('vist services', () => {
+    cy.get('[title="Menu"]').click()
+
+    cy.get('#menu-nav-bar > [title="Services"]').click()
+      .url().should('eq', 'http://localhost:3333/services')
+  })
 })

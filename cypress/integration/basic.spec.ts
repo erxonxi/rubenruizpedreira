@@ -40,4 +40,12 @@ context('Basic', () => {
     cy.get('[title="GitHub"]').click()
       .url().should('eq', 'http://localhost:3333/')
   })
+
+  it('visit about page', () => {
+    cy.get('[title="Services"]').click()
+      .url().should('eq', 'http://localhost:3333/services')
+
+    cy.contains('Services')
+      .should('exist')
+  })
 })
