@@ -35,7 +35,7 @@ const toggleLocales = () => {
       leave-to-class="transform scale-95 opacity-0"
     >
       <MenuItems absolute z-10 right-0 mt-1 w-64 origin-top-right divide-y divide-gray-100 rounded-xs bg-white dark:bg-neutral-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none>
-        <div class="px-1 py-1 text-xl">
+        <div id="menu-nav-bar" class="px-1 py-1 text-xl">
           <MenuItem v-slot="{ active }">
             <a
               href="/blog" class="group flex w-full items-center rounded-sm p-4" :class="[
