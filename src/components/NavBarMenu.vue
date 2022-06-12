@@ -74,13 +74,13 @@ const toggleLocales = () => {
           </MenuItem>
           <MenuItem>
             <div my-4 grid grid-cols-3 text-2xl>
-              <a class="icon-btn mx-auto" :title="t('button.toggle_langs')" @click="toggleLocales()">
+              <a class="icon-btn mx-auto cursor-default" :title="t('button.toggle_langs')" @click="toggleLocales()">
                 <div i-carbon-language />
               </a>
               <a class="icon-btn mx-auto" rel="noreferrer" href="https://github.com/erxonxi" target="_blank" title="GitHub">
                 <div i-carbon-logo-github />
               </a>
-              <button class="icon-btn mx-auto !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
+              <button class="icon-btn mx-auto cursor-default !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
                 <div i="carbon-sun dark:carbon-moon" />
               </button>
             </div>
