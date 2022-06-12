@@ -4,6 +4,7 @@ import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import generateSitemap from 'vite-ssg-sitemap'
 import Layouts from 'vite-plugin-vue-layouts'
+import mix, { vercelAdapter } from 'vite-plugin-mix'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'vite-plugin-md'
@@ -125,6 +126,11 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-inspect
     // Visit http://localhost:3333/__inspect/ to see the inspector
     Inspect(),
+
+    mix({
+      handler: './src/api/main.ts',
+      adapter: vercelAdapter(),
+    }),
   ],
 
   // https://github.com/antfu/vite-ssg

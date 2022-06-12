@@ -10,14 +10,28 @@ import {
 const { t } = useI18n()
 
 const isOpen = ref(false)
+const email: any = ref(null)
 
 function closeModal() {
   isOpen.value = false
-  // eslint-disable-next-line no-alert
-  alert('¿🇪🇸 is this a flag?')
 }
+
 function openModal() {
   isOpen.value = true
+}
+
+function submitSubscribe() {
+  const options = {
+    method: 'PUT',
+  }
+
+  fetch(`/api/newsletter/subscribe/${email.value.value}`, options)
+    .then(res => res.json())
+    .then((res) => {
+      // eslint-disable-next-line no-console
+      console.log(res)
+      isOpen.value = false
+    })
 }
 </script>
 
@@ -75,11 +89,11 @@ function openModal() {
               </div>
 
               <div class="mt-4 flex flex-row gap-4">
-                <input id="email" type="email" placeholder="thor@gmail.com" bg-gray-100 dark:bg-neutral-600 w-full rounded-md text-sm md:text-lg border-gray-300 px-2 py-1>
+                <input id="email" ref="email" type="email" placeholder="thor@gmail.com" bg-gray-100 dark:bg-neutral-600 w-full rounded-md text-sm md:text-lg border-gray-300 px-2 py-1>
                 <button
                   type="button"
                   class="inline-flex justify-center rounded-md border border-transparent bg-gray-200 dark:bg-neutral-700 px-4 py-2 text-sm font-medium text-gray-900 dark:text-neutral-200 hover:bg-gray-200 dark:hover:bg-neutral-600  focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2"
-                  @click="closeModal"
+                  @click="submitSubscribe"
                 >
                   {{ t('button.subscribe') }}
                 </button>
