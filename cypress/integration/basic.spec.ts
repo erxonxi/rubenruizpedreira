@@ -5,9 +5,6 @@ context('Basic', () => {
   })
 
   it('view home & change lenguage', () => {
-    cy.contains('Rubén Ruiz Pedreira')
-      .should('exist')
-
     cy.contains('Work')
       .should('exist')
 
