@@ -33,6 +33,8 @@ about:
 blog:
   title: Blog
   last_posts: Últimos Artículos
+  last_post: Último Artículo
+  other_posts: Otros Artículos
 projects:
   title: Proyectos
   list:

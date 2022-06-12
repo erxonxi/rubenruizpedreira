@@ -33,6 +33,8 @@ about:
 blog:
   title: Blog
   last_posts: Last Posts
+  last_post: Last Post
+  other_posts: Other Posts
 projects:
   title: Projects
   list:
