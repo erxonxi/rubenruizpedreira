@@ -1,8 +1,12 @@
 ---
 title: Mi Primer Post
+date: 2022-06-12T00:00:00.000+00:00
+lang: es
+duration: 1min
 ---
 <div class="text-center">
-  <h1>Mi Primer Post</h1>
+  <h1>{{ `${title}` }}</h1>
+  {{ `${new Date(date).getFullYear()}/${new Date(date).getMonth()}/${new Date(date).getDate()} &middot; ${duration} read` }}
 </div>
 
 ## 🏁 Introducción, ¿Quien soy?
