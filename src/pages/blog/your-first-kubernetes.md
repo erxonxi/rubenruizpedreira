@@ -6,7 +6,7 @@ duration: 7min
 ---
 <div class="text-center max-w-lg mx-auto">
   <h1>{{ `${title}` }}</h1>
-  {{ `${new Date(date).getFullYear()}/${new Date(date).getMonth()}/${new Date(date).getDate()} &middot; ${duration} read` }}
+  {{ `${new Date(date).getFullYear()}/${new Date(date).getMonth() + 1}/${new Date(date).getDate()} &middot; ${duration} read` }}
 </div>
 
 Buenas, lectores, hoy vamos a desplegar nuestro primer clúster de Kubernetes con 2 nodos usando k0s, para en próximos artículos podamos desplegar nuestros servicios (frontends, microservicios...).

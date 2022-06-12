@@ -6,7 +6,7 @@ duration: 1min
 ---
 <div class="text-center">
   <h1>{{ `${title}` }}</h1>
-  {{ `${new Date(date).getFullYear()}/${new Date(date).getMonth()}/${new Date(date).getDate()} &middot; ${duration} read` }}
+  {{ `${new Date(date).getFullYear()}/${new Date(date).getMonth() + 1}/${new Date(date).getDate()} &middot; ${duration} read` }}
 </div>
 
 ## 🏁 Introducción, ¿Quien soy?
