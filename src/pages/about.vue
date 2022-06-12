@@ -4,7 +4,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div text-left container mx-auto max-w-xl my-4>
+  <div text-left mx-auto max-w-2xl my-4>
     <p text-2xl font-bold mb-2 underline underline-offset-2>
       {{ t('about.title') }}
     </p>
