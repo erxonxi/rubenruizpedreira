@@ -19,9 +19,9 @@ const lastPosts = ref([
     </h1>
 
     <div grid gap-4 my-6>
-      <a v-for="post in lastPosts" :key="post.slug" drop-shadow-xl border-4 border-gray-500 p-4 rounded-xl :href="`/blog/${post.slug}`">
+      <RouterLink v-for="post in lastPosts" :key="post.slug" drop-shadow-xl border-4 border-gray-500 p-4 rounded-xl :to="`/blog/${post.slug}`">
         <h2>{{ post.title }}</h2>
-      </a>
+      </RouterLink>
     </div>
   </div>
 </template>

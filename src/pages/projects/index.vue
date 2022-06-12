@@ -15,12 +15,14 @@ const projects = ref([
     </h1>
 
     <div grid md:grid-cols-2 gap-4 my-6>
-      <a v-for="project in projects" :key="project.slug" drop-shadow-xl border-4 border-gray-500 p-4 rounded-xl :href="`/projects/${project.slug}`">
-        <h2 text-2xl font-bold>{{ project.title }}</h2>
+      <RouterLink v-for="project in projects" :key="project.slug" drop-shadow-xl border-4 border-gray-500 p-4 rounded-xl :to="`/projects/${project.slug}`">
+        <h2 text-2xl font-bold>
+          {{ project.title }}
+        </h2>
         <p text-sm text-gray-600 dark:text-gray-300>
           {{ t(`projects.list.${project.slug}.desc`) }}
         </p>
-      </a>
+      </RouterLink>
     </div>
   </div>
 </template>
