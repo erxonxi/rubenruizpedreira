@@ -1,12 +1,12 @@
 ---
 title: Crear tu primer clúster de Kubernetes con k0s
-date: 2022-01-10T00:00:00.000+00:00
+date: 2022/01/10
 lang: es
 duration: 7min
 ---
 <div class="text-center max-w-lg mx-auto">
   <h1>{{ `${title}` }}</h1>
-  {{ `${new Date(date).getFullYear()}/${new Date(date).getMonth() + 1}/${new Date(date).getDate()} &middot; ${duration} read` }}
+  {{ `${date}` }}
 </div>
 
 Buenas, lectores, hoy vamos a desplegar nuestro primer clúster de Kubernetes con 2 nodos usando k0s, para en próximos artículos podamos desplegar nuestros servicios (frontends, microservicios...).
