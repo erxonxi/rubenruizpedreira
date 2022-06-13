@@ -41,7 +41,8 @@ const toggleLocales = () => {
         </RouterLink>
       </div>
     </div>
-    <div class="hidden md:inline basis-2/4 text-right text-lg mt-2">
+
+    <div class="hidden md:inline basis-1/4 text-right text-lg mt-2">
       <a class="icon-btn mx-2 cursor-default" :title="t('button.toggle_langs')" @click="toggleLocales()">
         <div i-carbon-language />
       </a>
@@ -52,6 +53,7 @@ const toggleLocales = () => {
         <div i="carbon-sun dark:carbon-moon" />
       </button>
     </div>
+
     <div class="inline md:hidden basis-3/4 text-right">
       <NavBarMenu />
     </div>
