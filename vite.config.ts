@@ -144,5 +144,6 @@ export default defineConfig({
     deps: {
       inline: ['@vue', '@vueuse', 'vue-demi'],
     },
+    setupFiles: ['test/setup.ts'],
   },
 })
