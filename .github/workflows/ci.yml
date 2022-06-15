@@ -91,6 +91,10 @@ jobs:
       - name: Cypress
         uses: cypress-io/github-action@v2
         with:
+          record: true
           install-command: echo
           build: pnpm run build
           start: npx vite --port 3333
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
