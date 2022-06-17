@@ -11,19 +11,19 @@ const { t } = useI18n()
 const plans = [
   {
     name: 'Simple Web',
-    price: '75 €',
+    price: '150 €',
     pages: '3 page máx.',
     more: ' Personal pages, Landings for Business...',
   },
   {
     name: 'Business Web',
-    price: '135 €',
+    price: '325 €',
     pages: '10 page máx.',
     more: ' Personal pages, Landings for Business...',
   },
   {
     name: 'StartUp Software',
-    price: '500 €',
+    price: '750 €',
     pages: 'Pages to define',
     more: 'Software with Authentication and 5 Entities CRUD',
   },
