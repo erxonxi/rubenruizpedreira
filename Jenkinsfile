@@ -26,10 +26,8 @@ pipeline {
             sh 'npm run test:e2e'
           }
         }
-
       }
     }
-
   }
   tools {
     nodejs '16.5.1'
