@@ -1,9 +1,5 @@
 pipeline {
   agent any
-  tools {
-    nodejs  '16.15.1'
-    xvfb  'Xvfb'
-  }
   stages {
     stage('Install Dependencies') {
       steps {
@@ -18,15 +14,31 @@ pipeline {
     }
 
     stage('Unit Tests') {
-      steps {
-        sh 'npm run test:unit'
+      parallel {
+        stage('Tests') {
+          steps {
+            echo 'Testing'
+          }
+        }
+
+        stage('Unit Testing') {
+          steps {
+            sh 'npm run test:unit'
+          }
+        }
+
+        stage('e2e Testing') {
+          steps {
+            sh 'npm run test:e2e'
+          }
+        }
+
       }
     }
 
-    stage('e2e Tests') {
-      steps {
-        sh 'npm run test:e2e'
-      }
-    }
+  }
+  tools {
+    nodejs '16.15.1'
+    xvfb 'Xvfb'
   }
 }
