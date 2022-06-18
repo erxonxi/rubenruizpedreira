@@ -31,8 +31,8 @@ pipeline {
       }
     }
   }
-  // tools {
-  //   nodejs '16.5.1'
+  tools {
+    nodejs '16.15.1'
   //   xvfb 'DISPLAY'
-  // }
+  }
 }
