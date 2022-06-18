@@ -2,6 +2,7 @@ pipeline {
   agent any
   tools {
     nodejs  '16.15.1'
+    xvfb  'Xvfb'
   }
   stages {
     stage('Install Dependencies') {
