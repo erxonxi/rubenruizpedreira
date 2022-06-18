@@ -22,10 +22,11 @@ pipeline {
       }
     }
 
-    wrap([$class: 'Xvfb']):
     stage('e2e Tests') {
       steps {
-        sh 'npm run test:e2e'
+        wrap([$class: 'Xvfb']) {
+          sh 'npm run test:e2e'
+        }
       }
     }
   }
