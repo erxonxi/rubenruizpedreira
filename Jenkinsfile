@@ -13,14 +13,8 @@ pipeline {
       }
     }
 
-    stage('Unit Tests') {
+    stage('Tests') {
       parallel {
-        stage('Tests') {
-          steps {
-            echo 'Testing'
-          }
-        }
-
         stage('Unit Testing') {
           steps {
             sh 'npm run test:unit'
