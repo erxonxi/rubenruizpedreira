@@ -23,7 +23,7 @@ pipeline {
 
         stage('e2e Testing') {
           steps {
-            wrap([$class: 'Xvfb']) {
+            wrap([$class: 'xvfb', installationName: 'DISPLAY']) {
               sh 'npm run test:e2e'
             }
           }
