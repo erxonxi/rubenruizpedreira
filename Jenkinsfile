@@ -13,6 +13,12 @@ pipeline {
       }
     }
 
+    stage('TypesCheck') {
+      steps {
+        sh 'npm run typecheck'
+      }
+    }
+
     stage('Unit Testing') {
       steps {
         sh 'npm run test:unit'
