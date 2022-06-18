@@ -23,7 +23,7 @@ pipeline {
 
         stage('e2e Testing') {
           steps {
-            wrap([$class: 'xvfb', installationName: 'DISPLAY']) {
+            wrap([$class: 'Xvfb']) {
               sh 'npm run test:e2e'
             }
           }
@@ -31,8 +31,8 @@ pipeline {
       }
     }
   }
-  tools {
-    nodejs '16.5.1'
-    xvfb 'DISPLAY'
-  }
+  // tools {
+  //   nodejs '16.5.1'
+  //   xvfb 'DISPLAY'
+  // }
 }
