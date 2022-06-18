@@ -10,22 +10,25 @@ pipeline {
         sh 'npm install'
       }
     }
-
+    
     stage('Lint') {
       steps {
         sh 'npm run lint'
       }
     }
 
-    stage('Unit Tests') {
-      steps {
-        sh 'npm run test:unit'
-      }
-    }
+    stages('Tests') {
 
-    stage('e2e Tests') {
-      steps {
-        sh 'npm run test:e2e'
+      stage('Unit Tests') {
+        steps {
+          sh 'npm run test:unit'
+        }
+      }
+
+      stage('e2e Tests') {
+        steps {
+          sh 'npm run test:e2e'
+        }
       }
     }
   }
