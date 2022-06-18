@@ -13,19 +13,9 @@ pipeline {
       }
     }
 
-    stage('Tests') {
-      parallel {
-        stage('Unit Testing') {
-          steps {
-            sh 'npm run test:unit'
-          }
-        }
-
-        stage('e2e Testing') {
-          steps {
-            sh 'npm run test:e2e'
-          }
-        }
+    stage('Unit Testing') {
+      steps {
+        sh 'npm run test:unit'
       }
     }
   }
