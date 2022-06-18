@@ -33,6 +33,6 @@ pipeline {
   }
   tools {
     nodejs '16.15.1'
-  //   xvfb 'DISPLAY'
+    xvfb 'DISPLAY'
   }
 }
