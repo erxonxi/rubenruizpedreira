@@ -16,10 +16,6 @@ pipeline {
         setCompletBuildStatus('ci/jenkins/lint', 'Linting...', 'PENDING')
         setCompletBuildStatus('ci/jenkins/typecheck', 'Checking Types...', 'PENDING')
         setCompletBuildStatus('ci/jenkins/test:unit', 'Unit Testing Running...', 'PENDING')
-        if (CURRENT_BRANCH == 'master') {
-          setCompletBuildStatus('cd/jenkins/deployment-production', 'Deployment Is Running...', 'PENDING')
-        }
-
         sh 'npm install'
       }
     }
@@ -61,21 +57,6 @@ pipeline {
             setCompletBuildStatus('ci/jenkins/test:unit', 'Unit Testing Correctly', 'SUCCESS')
           } catch (Exception e) {
             setCompletBuildStatus('ci/jenkins/test:unit', 'Error In Unit Testing', 'FAILURE')
-          }
-        }
-      }
-    }
-
-    if (CURRENT_BRANCH == 'master') {
-      stage('Deploy Production') {
-        steps {
-          script {
-            try {
-              sh 'echo "Hello World!"'
-              setCompletBuildStatus('cd/jenkins/deployment-production', 'Deployed Production Correctly', 'SUCCESS')
-            } catch (Exception e) {
-              setCompletBuildStatus('cd/jenkins/deployment-production', 'Error In Deployment Production', 'FAILURE')
-            }
           }
         }
       }
