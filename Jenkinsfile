@@ -1,13 +1,3 @@
-void setBuildStatus(String message, String state) {
-  step([
-      $class: 'GitHubCommitStatusSetter',
-      reposSource: [$class: 'ManuallyEnteredRepositorySource', url: 'https://github.com/erxonxi/rubenruizpedreira'],
-      contextSource: [$class: 'ManuallyEnteredCommitContextSource', context: 'ci/jenkins/status'],
-      errorHandlers: [[$class: 'ChangingBuildStatusErrorHandler', result: 'UNSTABLE']],
-      statusResultSource: [ $class: 'ConditionalStatusResultSource', results: [[$class: 'AnyBuildResult', message: message, state: state]] ]
-  ])
-}
-
 void setCompletBuildStatus(String context, String message, String state) {
   step([
       $class: 'GitHubCommitStatusSetter',
@@ -23,11 +13,17 @@ pipeline {
   stages {
     stage('Install Dependencies') {
       steps {
+        sh 'npm install'
+      }
+    }
+
+    stage('Lint') {
+      steps {
         script {
           try {
             setCompletBuildStatus('ci/jenkins/lint', 'Linting...', 'IN_PROGRESS')
-            sh 'npm install'
-            setCompletBuildStatus('ci/jenkins/lint', 'Linted correctly', 'SUCCESS')
+            sh 'npm run lint'
+            setCompletBuildStatus('ci/jenkins/lint', 'Linted Correctly', 'SUCCESS')
           } catch (Exception e) {
             setCompletBuildStatus('ci/jenkins/lint', 'Error Linting code', 'FAILURE')
           }
@@ -35,31 +31,32 @@ pipeline {
       }
     }
 
-    stage('Lint') {
-      steps {
-        sh 'npm run lint'
-      }
-    }
-
     stage('TypesCheck') {
       steps {
-        sh 'npm run typecheck'
+        script {
+          try {
+            setCompletBuildStatus('ci/jenkins/typecheck', 'Checking Types...', 'IN_PROGRESS')
+            sh 'npm run typecheck'
+            setCompletBuildStatus('ci/jenkins/typecheck', 'Types Checked Correctly', 'SUCCESS')
+          } catch (Exception e) {
+            setCompletBuildStatus('ci/jenkins/typecheck', 'Error Checking Types', 'FAILURE')
+          }
+        }
       }
     }
 
     stage('Unit Testing') {
       steps {
-        sh 'npm run test:unit'
+        script {
+          try {
+            setCompletBuildStatus('ci/jenkins/test:unit', 'Unit Testing Running...', 'IN_PROGRESS')
+            sh 'npm run test:unit'
+            setCompletBuildStatus('ci/jenkins/test:unit', 'Unit Testing Correctly', 'SUCCESS')
+          } catch (Exception e) {
+            setCompletBuildStatus('ci/jenkins/test:unit', 'Error In Unit Testing', 'FAILURE')
+          }
+        }
       }
-    }
-  }
-
-  post {
-    success {
-        setBuildStatus('Build succeeded', 'SUCCESS')
-    }
-    failure {
-        setBuildStatus('Build failed', 'FAILURE')
     }
   }
 
