@@ -23,12 +23,14 @@ pipeline {
   stages {
     stage('Install Dependencies') {
       steps {
-        try {
-          setCompletBuildStatus('ci/jenkins/lint', 'Linting...', 'IN_PROGRESS')
-          sh 'npm install'
-          setCompletBuildStatus('ci/jenkins/lint', 'Linted correctly', 'SUCCESS')
-        } catch (Exception e) {
-          setCompletBuildStatus('ci/jenkins/lint', 'Error Linting code', 'FAILURE')
+        script {
+          try {
+            setCompletBuildStatus('ci/jenkins/lint', 'Linting...', 'IN_PROGRESS')
+            sh 'npm install'
+            setCompletBuildStatus('ci/jenkins/lint', 'Linted correctly', 'SUCCESS')
+          } catch (Exception e) {
+            setCompletBuildStatus('ci/jenkins/lint', 'Error Linting code', 'FAILURE')
+          }
         }
       }
     }
