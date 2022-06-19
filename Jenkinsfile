@@ -20,27 +20,30 @@ pipeline {
       }
     }
 
-    stage('Lint') {
-      steps {
-        script {
-          try {
-            sh 'npm run lint'
-            setCompletBuildStatus('ci/jenkins/lint', 'Linted Correctly', 'SUCCESS')
+    stage('Code Checks') {
+      parallel {
+        stage('Lint') {
+          steps {
+            script {
+              try {
+                sh 'npm run lint'
+                setCompletBuildStatus('ci/jenkins/lint', 'Linted Correctly', 'SUCCESS')
           } catch (Exception e) {
-            setCompletBuildStatus('ci/jenkins/lint', 'Error Linting code', 'FAILURE')
+                setCompletBuildStatus('ci/jenkins/lint', 'Error Linting code', 'FAILURE')
+              }
+            }
           }
         }
-      }
-    }
-
-    stage('TypesCheck') {
-      steps {
-        script {
-          try {
-            sh 'npm run typecheck'
-            setCompletBuildStatus('ci/jenkins/typecheck', 'Types Checked Correctly', 'SUCCESS')
+        stage('TypesCheck') {
+          steps {
+            script {
+              try {
+                sh 'npm run typecheck'
+                setCompletBuildStatus('ci/jenkins/typecheck', 'Types Checked Correctly', 'SUCCESS')
           } catch (Exception e) {
-            setCompletBuildStatus('ci/jenkins/typecheck', 'Error Checking Types', 'FAILURE')
+                setCompletBuildStatus('ci/jenkins/typecheck', 'Error Checking Types', 'FAILURE')
+              }
+            }
           }
         }
       }
