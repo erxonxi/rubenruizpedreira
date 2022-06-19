@@ -21,7 +21,7 @@ pipeline {
       steps {
         script {
           try {
-            setCompletBuildStatus('ci/jenkins/lint', 'Linting...', 'IN_PROGRESS')
+            setCompletBuildStatus('ci/jenkins/lint', 'Linting...', 'INPROGRESS')
             sh 'npm run lint'
             setCompletBuildStatus('ci/jenkins/lint', 'Linted Correctly', 'SUCCESS')
           } catch (Exception e) {
@@ -35,7 +35,7 @@ pipeline {
       steps {
         script {
           try {
-            setCompletBuildStatus('ci/jenkins/typecheck', 'Checking Types...', 'IN_PROGRESS')
+            setCompletBuildStatus('ci/jenkins/typecheck', 'Checking Types...', 'INPROGRESS')
             sh 'npm run typecheck'
             setCompletBuildStatus('ci/jenkins/typecheck', 'Types Checked Correctly', 'SUCCESS')
           } catch (Exception e) {
@@ -49,7 +49,7 @@ pipeline {
       steps {
         script {
           try {
-            setCompletBuildStatus('ci/jenkins/test:unit', 'Unit Testing Running...', 'IN_PROGRESS')
+            setCompletBuildStatus('ci/jenkins/test:unit', 'Unit Testing Running...', 'INPROGRESS')
             sh 'npm run test:unit'
             setCompletBuildStatus('ci/jenkins/test:unit', 'Unit Testing Correctly', 'SUCCESS')
           } catch (Exception e) {
