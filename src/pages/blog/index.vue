@@ -2,6 +2,10 @@
 const { t } = useI18n()
 const lastPosts = ref([
   {
+    slug: 'server-deployment-automations-with-ansible',
+    title: 'Automatizaciones de despliegue de servidores con Ansible',
+  },
+  {
     slug: 'your-first-kubernetes',
     title: 'Crear tu primer clúster de Kubernetes con k0s',
   },
