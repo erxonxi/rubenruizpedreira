@@ -45,7 +45,5 @@ newslatter:
   desc: You can subscribe to newsletter to find out about new news.
 services:
   title: Services
-  list:
-    1:
-      title: Simple Web
+  description: If you are interested in working together you can contact me on LinkedIn. Currently, when working I have an availability of 10 hours a week. If you have any proposal do not hesitate to comment.
 not-found: Not found
