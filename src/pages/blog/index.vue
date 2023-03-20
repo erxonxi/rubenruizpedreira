@@ -2,6 +2,10 @@
 const { t } = useI18n()
 const lastPosts = ref([
   {
+    slug: 'ai-assistant',
+    title: 'Mi mini proyecto personal: una web de herramientas usando GPT-3',
+  },
+  {
     slug: 'your-first-kubernetes',
     title: 'Crear tu primer clúster de Kubernetes con k0s',
   },
