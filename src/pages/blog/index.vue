@@ -6,6 +6,10 @@ const lastPosts = ref([
     title: 'Mi mini proyecto personal: una web de herramientas usando GPT-3',
   },
   {
+    slug: 'basic-linux-commands',
+    title: 'Administración básica de Linux: Comandos básicos',
+  },
+  {
     slug: 'your-first-kubernetes',
     title: 'Crear tu primer clúster de Kubernetes con k0s',
   },

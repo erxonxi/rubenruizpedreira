@@ -2,7 +2,7 @@
 title: "Mi mini proyecto personal: una web de herramientas usando GPT-3"
 date: 2023/03/20
 lang: es
-duration: 7min
+duration: 15min
 ---
 <div class="text-center max-w-lg mx-auto">
   <h1>{{ `${title}` }}</h1>
