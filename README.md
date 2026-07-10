@@ -1,25 +1,36 @@
-# Ruben Ruiz Pedreira Website
+# Rubén Ruiz Pedreira — Terminal Portfolio
 
-This web is build with VueJS, using template of Vitesse.
+An interactive, bilingual terminal portfolio built around RubenOS and the `make-it-funny` shell. It presents Rubén's product-engineering profile through Fastfetch, Markdown files, Reader mode, and a keyboard-friendly command interface.
+
+## Stack
+
+- React 19 and TypeScript
+- Vite 6
+- Vitest and Testing Library
+- React Markdown with GitHub Flavored Markdown
+- Geist Mono and Phosphor Icons
 
 ## Development
 
-### Run Dev Envirement
-
-You can run this app and modify
+Requires Node.js 20 or newer and npm.
 
 ```bash
+npm ci
 npm run dev
 ```
 
-### Run Unit Tests
+## Verification
 
 ```bash
-npm run test:unit
+npm test
+npm run typecheck
+npm run build
 ```
 
-### Run E2E Tests
+The production build is written to `dist/`.
 
-```bash
-npm run test:e2e
-```
+## Content and commands
+
+Portfolio copy lives in `src/content/en/` and `src/content/es/`. Terminal parsing is isolated in `src/lib/terminal.ts`, while the application flow and boot choreography live in `src/App.tsx`.
+
+Available commands: `fastfetch`, `ls`, `cat <file>`, `help`, `clear`, and `reboot`.
