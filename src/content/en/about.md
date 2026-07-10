@@ -13,4 +13,4 @@ Since 2020, I have worked across energy software, digital learning, freelance de
 
 Away from the editor, I learn in public through agile and engineering communities, have spoken at the school where I trained, and DJ through **Make It Funny**.
 
-I am growing toward international, high-bar teams where ownership, craft, curiosity, and kindness matter.
+I want to keep growing with ambitious teams where ownership, craft, curiosity, and kindness matter.

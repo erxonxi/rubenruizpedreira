@@ -2,7 +2,7 @@
 
 ## Construyamos algo importante. Disfrutemos el proceso.
 
-Siempre me interesan las conversaciones con equipos ambiciosos de producto e ingeniería que trabajan a escala internacional.
+Siempre me interesan las conversaciones con equipos ambiciosos de producto e ingeniería que construyen productos útiles con cuidado y estándares altos.
 
 - [LinkedIn ↗](https://www.linkedin.com/in/rub%C3%A9n-ruiz-pedreira/)
 - [GitHub ↗](https://github.com/erxonxi)

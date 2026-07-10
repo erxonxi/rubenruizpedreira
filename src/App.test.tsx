@@ -146,7 +146,6 @@ describe("terminal portfolio", () => {
     expect(topbar).not.toBeNull();
     expect(within(topbar as HTMLElement).getByText("booting")).toBeInTheDocument();
     expect(within(topbar as HTMLElement).queryByText("iniciando")).not.toBeInTheDocument();
-    expect(within(topbar as HTMLElement).queryByText("Barcelona → global")).not.toBeInTheDocument();
     expect(topbar?.querySelector(".desktop-location")).toBeNull();
 
     act(() => vi.advanceTimersByTime(4860));

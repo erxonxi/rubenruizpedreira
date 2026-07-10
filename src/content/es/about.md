@@ -13,4 +13,4 @@ Desde 2020 he trabajado en software para energía, aprendizaje digital, producto
 
 Fuera del editor aprendo en público con comunidades ágiles y de ingeniería, he dado una charla en el centro donde estudié y soy DJ con **Make It Funny**.
 
-Quiero seguir creciendo en equipos internacionales y exigentes donde importen la responsabilidad, el oficio, la curiosidad y la humanidad.
+Quiero seguir creciendo en equipos ambiciosos donde importen la responsabilidad, el oficio, la curiosidad y la humanidad.
