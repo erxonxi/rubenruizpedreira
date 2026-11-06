@@ -14,3 +14,10 @@ This repository contains the production terminal portfolio for Rubén Ruiz Pedre
 - Use npm and the committed `package-lock.json`.
 - Run `npm test`, `npm run typecheck`, and `npm run build` after application changes.
 - For visual changes, compare against `design-qa.md` and repeat browser QA at desktop and 390 × 844 mobile sizes.
+
+## Swarm
+
+- Verify (workflow `CI`, job `verify`): `npm ci`, `npm test`, `npm run typecheck`, `npm run build`.
+- Deploy: Vercel publishes automatically when a PR is merged to `main`. The canonical domain is `www.rubenruizpedreira.es`; the apex redirects to it.
+- Smoke after deploy: `www` loads with 200, finishes the boot, and answers `help` in EN and ES.
+- Public repo: no secrets or internal data in PRs.
