@@ -34,3 +34,7 @@ The production build is written to `dist/`.
 Portfolio copy lives in `src/content/en/` and `src/content/es/`. Terminal parsing is isolated in `src/lib/terminal.ts`, while the application flow and boot choreography live in `src/App.tsx`.
 
 Available commands: `fastfetch`, `ls`, `cat <file>`, `help`, `clear`, and `reboot`.
+
+## Deployment
+
+Merging to `main` triggers an automatic Vercel deploy to `www.rubenruizpedreira.es` (the apex redirects). CI runs the same verification commands as above. See `AGENTS.md` for the post-deploy smoke check.
